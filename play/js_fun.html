@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      var count = 0;
+
+      function handleOrientation(orientData) { 
+        count++;
+        var b = document.body;
+
+        b.innerHTML = "<p> count = " + count +  "</p>" +
+                      "<p> x = " + orientData.x + "</p>" +
+                      "<p> y = " + orientData.y + "</p>" +
+                      "<p> z = " + orientData.z + "</p>";
+      }
+
+      window.addEventListener("MozOrientation", handleOrientation, true);
+    </script> 
+  </head>
+  <body>
+  </body>
+</html>
