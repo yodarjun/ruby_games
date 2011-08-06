@@ -2,8 +2,7 @@ require 'rspec'
 require 'benchmark'
 require 'shoulda'
 require 'shoulda/integrations/rspec'
-Spec::Runner.configure do |config|
-
+Rspec.configure do |config|
   config.before(:all) do
     @reports = []
   end
